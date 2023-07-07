@@ -15,17 +15,17 @@
       <div class="bill-input-div">
         <label for="bill-input">Bill</label>
         <input id="bill-input" type="number" />
-      </div>
-      <div class="select-tip-div">
-        Select Tip
-        <div class="buttons-div">
-          <button class="tip-btns">5%</button>
-          <button class="tip-btns">10%</button>
-          <button class="tip-btns">15%</button>
-          <button class="tip-btns">25%</button>
-          <button class="tip-btns">50%</button>
-          <input type="text" placeholder="Custom" class="custom-input" />
 
+        <div class="select-tip-div">
+          Select Tip %
+          <div class="buttons-div">
+            <button class="tip-btns">5%</button>
+            <button class="tip-btns">10%</button>
+            <button class="tip-btns">15%</button>
+            <button class="tip-btns">25%</button>
+            <button class="tip-btns">50%</button>
+            <input type="text" placeholder="Custom" class="custom-input" />
+          </div>
           <div class="number-people-div">
             <label for="people" class="number-people">Number of People</label>
             <input id="people" type="number" />
@@ -40,9 +40,10 @@
           </h1>
           <h1 class="tip-amount-txt">0.00$</h1>
         </div>
+        <!-- total result -->
         <div class="total-div">
           <h2 class="total-person">Total <br /><span>/ person</span></h2>
-          <h2 class="total-amount">0.00$</h2>
+          <h2 id="total-amount">0.00$</h2>
         </div>
         <button class="reset-btn">RESET</button>
       </div>

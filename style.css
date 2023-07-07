@@ -27,6 +27,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 25px 25px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+  margin-top: 40px;
 }
 .bill-input-div {
   display: flex;
@@ -45,7 +49,6 @@ main {
   background-image: url("./images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position: 10px;
-  border: none;
   color: #00474b;
   text-align: right;
   font-size: 1.5rem;
@@ -64,6 +67,7 @@ main {
   gap: 16px;
 }
 .tip-btns {
+  border: none;
   width: 146.631px;
   height: 48px;
   border-radius: 5px;
@@ -87,10 +91,12 @@ main {
   background: #f3f9fa;
   font-family: Space Mono;
   outline: none;
+  border: none;
 }
 .number-people-div {
   display: flex;
   flex-direction: column;
+  margin-top: 32px;
 }
 .number-people {
   color: #5e7a7d;
@@ -149,8 +155,9 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 23px;
 }
-.total-amount {
+#total-amount {
   color: #26c2ae;
   text-align: right;
   font-size: 2rem;
@@ -169,5 +176,99 @@ span {
   margin-top: 33px;
 }
 
+/* ----------------------------- Desktop Version -----------------------*/
 @media screen and (min-width: 1440px) {
+  body {
+  }
+
+  header {
+    padding-top: 163px;
+  }
+
+  main {
+    width: 920px;
+    padding: 48px;
+    flex-direction: row;
+    gap: 48px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+  }
+
+  #bill-input {
+    width: 379px;
+    background-image: url("./images/icon-dollar.svg");
+  }
+  #bill-input:hover {
+    border-radius: 5px;
+    border: 2px solid #26c2ae;
+    background: #f3f9fa;
+  }
+  .select-tip-div {
+    margin-top: 40px;
+  }
+  .buttons-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .tip-btns {
+    width: 117px;
+    border-radius: 5px;
+    background: #00474b;
+    border: none;
+  }
+  .tip-btns:hover {
+    background: #26c2ae;
+  }
+  .custom-input {
+    color: #00474b;
+    text-align: center;
+    width: 118px;
+    border-radius: 5px;
+  }
+  .custom-input:hover {
+    border-radius: 5px;
+    border: 2px solid #26c2ae;
+    background: #f3f9fa;
+  }
+  .number-people-div {
+    margin-top: 40px;
+  }
+
+  #people {
+    width: 379px;
+    background-image: url("./images/icon-person.svg");
+    background-repeat: no-repeat;
+  }
+  .result-div {
+    width: 413px;
+    padding: 40px;
+  }
+
+  .tip-amount-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .tip-amount-txt {
+    font-size: 3rem;
+    letter-spacing: -1px;
+  }
+
+  .total-div {
+    margin-top: 25px;
+  }
+  #total-amount {
+    font-size: 3rem;
+    letter-spacing: -1px;
+  }
+  .reset-btn {
+    width: 333px;
+    margin-top: 122px;
+  }
+  .reset-btn:hover {
+    border-radius: 5px;
+    background: #9fe8df;
+  }
 }
