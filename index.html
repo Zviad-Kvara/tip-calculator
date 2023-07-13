@@ -27,7 +27,11 @@
             <input type="text" placeholder="Custom" class="custom-input" />
           </div>
           <div class="number-people-div">
-            <label for="people" class="number-people">Number of People</label>
+            <label for="people" class="number-people"
+              >Number of People
+              <p id="validation"></p
+            ></label>
+
             <input id="people" type="number" />
           </div>
         </div>
@@ -38,15 +42,25 @@
             Tip Amount <br />
             <span class="person">/ person</span>
           </h1>
-          <h1 class="tip-amount-txt">0.00$</h1>
+          <h1 id="tip-amount-txt">0.00$</h1>
         </div>
         <!-- total result -->
         <div class="total-div">
           <h2 class="total-person">Total <br /><span>/ person</span></h2>
           <h2 id="total-amount">0.00$</h2>
         </div>
-        <button class="reset-btn">RESET</button>
+        <button id="reset-btn">RESET</button>
       </div>
     </main>
+    <footer>
+      <div class="attribution">
+        Coded by
+        <a
+          href="https://www.linkedin.com/in/zviad-kvaratskhelia-0a8268273/"
+          target="_blank"
+          >Zviad Kvaratskhelia</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
