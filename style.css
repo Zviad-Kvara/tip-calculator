@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -18,8 +19,7 @@ header {
   padding-top: 50px;
   margin: auto;
 }
-.logo {
-}
+
 main {
   width: 375px;
   padding: 32px;
@@ -54,10 +54,15 @@ main {
   font-size: 1.5rem;
   outline: none;
 }
-#bill-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
 
+#bill-input:hover {
+  border-radius: 5px;
+  outline: 2px solid #26c2ae;
+  cursor: pointer;
+}
+#bill-input {
+  -moz-appearance: textfield;
+}
 .select-tip-div {
   margin-top: 32px;
   color: #5e7a7d;
@@ -80,12 +85,14 @@ main {
   font-size: 1.5rem;
   font-family: Space Mono;
 }
+
 .tip-btns:hover {
   border-radius: 5px;
   background: #26c2ae;
   cursor: pointer;
 }
-.custom-input {
+
+#custom-input {
   color: #547878;
   text-align: center;
   font-size: 1.5rem;
@@ -97,6 +104,13 @@ main {
   outline: none;
   border: none;
 }
+#custom-input:hover {
+  border-radius: 5px;
+  border: 2px solid #26c2ae;
+  background: #f3f9fa;
+  cursor: pointer;
+}
+
 .number-people-div {
   display: flex;
   flex-direction: column;
@@ -121,6 +135,10 @@ main {
   text-align: right;
   font-size: 1.5rem;
   font-family: Space Mono;
+  cursor: pointer;
+}
+#people {
+  -moz-appearance: textfield;
 }
 .result-div {
   width: 327px;
@@ -184,6 +202,7 @@ span {
 #reset-btn:hover {
   border-radius: 5px;
   background: #9fe8df;
+  cursor: pointer;
 }
 #validation {
   color: #e17457;
@@ -191,18 +210,11 @@ span {
   font-size: 1rem;
 }
 footer {
-  color: #26c2ae;
-  font-size: 1.1rem;
-}
-a {
-  color: #00474b;
+  display: none;
 }
 
 /* ----------------------------- Desktop Version -----------------------*/
 @media screen and (min-width: 1440px) {
-  body {
-  }
-
   header {
     padding-top: 163px;
   }
@@ -221,11 +233,7 @@ a {
     width: 379px;
     background-image: url("./images/icon-dollar.svg");
   }
-  #bill-input:hover {
-    border-radius: 5px;
-    border: 2px solid #26c2ae;
-    background: #f3f9fa;
-  }
+
   .select-tip-div {
     margin-top: 40px;
   }
@@ -242,7 +250,7 @@ a {
   .tip-btns:hover {
     background: #26c2ae;
   }
-  .custom-input {
+  #custom-input {
     color: #00474b;
     text-align: center;
     width: 118px;
@@ -261,6 +269,8 @@ a {
     width: 379px;
     background-image: url("./images/icon-person.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
   }
   .result-div {
     width: 413px;
@@ -288,5 +298,13 @@ a {
   #reset-btn {
     width: 333px;
     margin-top: 122px;
+  }
+  footer {
+    display: block;
+    color: #26c2ae;
+    font-size: 1.1rem;
+  }
+  a {
+    color: #00474b;
   }
 }
