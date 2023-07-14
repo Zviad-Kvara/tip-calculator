@@ -53,6 +53,7 @@ main {
   text-align: right;
   font-size: 1.5rem;
   outline: none;
+  border: none;
 }
 
 #bill-input:hover {
